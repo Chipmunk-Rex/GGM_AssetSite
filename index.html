@@ -5,12 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/core.css">
-    <link rel="stylesheet" href="./css/app.css">
-    
+    <link rel="stylesheet" href="./data/AssetList.csv">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/app.css"> -->
+
     <script src="./js/main.js"></script>
     <!-- <script src="./css/app.css"></script> -->
     <title>title</title>
@@ -20,7 +26,7 @@
     <header>
         <div class="header_top">
             <a href="https://ggm.gondr.net/">
-            <img src="https://ggm.gondr.net/image/logo.png" alt="">
+                <img src="https://ggm.gondr.net/image/logo.png" alt="">
             </a>
         </div>
         <div class="header_middle">
@@ -32,30 +38,32 @@
     <div class="main_screen">
         <header class="main_header">
             <div class="main_SearchBox">
-                <input type="text" class="main_SearchTxt" placeholder="에셋 검색" name="" id="">
+                <input type="text" class="main_SearchTxt jua-regular" placeholder="에셋 검색" name="" id="">
                 <img class="main_SearchIcon" src="https://img.icons8.com/?size=50&id=7695&format=png" alt="">
             </div>
         </header>
 
         <div class="main_assetScreen">
             <div class="main_assetList">
-
+<!-- 
                 <div class="main_assetBox">
                     <div class="main_assetBox_imgbox">
                         <img class="main_assetBox_img"
-                        src="https://ggm.gondr.net/image/users/397/profile/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-06-02%20040653.png"
-                        alt="">
+                            src="https://ggm.gondr.net/image/users/397/profile/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-06-02%20040653.png"
+                            alt="">
                     </div>
                     <div class="main_assetBox_data">
-                        <span class="main_assetBox_data_title">윤지 에셋</span>
+                        <span class="main_assetBox_data_title jua-regular">윤지 에셋</span>
                         <div class="main_assetBox_data_buttons">
-                            <img class="main_assetBox_data_infoBtn button" src="https://cdn-icons-png.flaticon.com/128/5258/5258991.png"
-                            alt="">
-                            <img class="main_assetBox_data_downloadBtn button"
-                            src="https://cdn-icons-png.flaticon.com/128/2550/2550337.png" alt="">
+                            <img class="main_assetBox_data_infoBtn button"
+                                src="https://cdn-icons-png.flaticon.com/128/5258/5258991.png" alt="">
+                            <a href="http://">
+                                <img class="main_assetBox_data_downloadBtn button"
+                                    src="https://cdn-icons-png.flaticon.com/128/2550/2550337.png" alt="">
+                            </a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

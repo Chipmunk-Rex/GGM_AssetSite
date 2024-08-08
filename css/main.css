@@ -28,7 +28,9 @@
 
 .main_SearchTxt {
 
-    padding: 10px;
+    font-size: 20px;
+
+    padding: 0 10px 0 10px;
 
     width: 200px;
     height: 35px;
@@ -38,6 +40,7 @@
 
 .main_SearchIcon {
     height: 35px;
+    padding: 0 5px 0 5px;
 }
 
 .main_SearchIcon:hover {
@@ -104,7 +107,9 @@
 }
 
 .main_assetBox_data_title {
+    font-size: 20px;
     margin: 4px;
+    
 }
 
 .main_assetBox_data_buttons {
