@@ -103,7 +103,7 @@
 
 .main_assetBox_data_buttons {
     padding: 0 0px 2px 0px;
-    transform: translate(100%, 0);
+    transform: translate(120%, 0);
 }
 
 .main_assetBox_data_downloadBtn {
@@ -112,10 +112,6 @@
     padding: 2px;
     border-radius: 5px;
     background-color: rgb(115, 115, 231);
-}
-
-.main_assetBox_data_downloadBtn:hover {
-    cursor: pointer;
 }
 
 .main_assetBox_data_infoBtn {
