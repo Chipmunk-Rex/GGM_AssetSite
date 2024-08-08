@@ -1,12 +1,19 @@
 .main_screen{
     width: 100%;
     height: 100%;
-    background-color: #f3f3f3;
+    background-color: rgb(240, 240, 242);
 
-    display: flex;
-    justify-content: center;
+    padding: 10px;
+
 }
-.main_Search{
+.main_header{
+    display: flex;
+}
+.main_SearchBox{
+    float: right;
+    position: relative;
+
+    margin: 0 0 10px 72%;
 
     display: flex;
     align-items: center;
@@ -21,10 +28,25 @@
     padding: 10px;
 
     width: 200px;
-    height: 35px;
+    height: 20px;
 
     border: none;
 }
 .main_SearchIcon{
     height: 35px;
+}
+.main_SearchIcon:hover{
+    cursor: pointer;
+}
+
+.main_assetList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 70%;
+    background-color: rgb(253, 253, 255);
+    border-radius: 10px;
+    height: 300px;
 }
