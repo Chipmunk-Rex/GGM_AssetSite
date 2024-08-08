@@ -44,28 +44,32 @@
     cursor: pointer;
 }
 
-.main_assetList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
+.main_assetScreen {
+    display: flex;
+    
     margin: 0 auto;
     width: 70%;
     background-color: rgb(253, 253, 255);
     border-radius: 10px;
-    height: 300px;
 }
+.main_assetList{
+    margin: 30px;
 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+    width: 100%;
+    height: 100%;
+}
 .main_assetBox {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin: 40px;
-    padding: 0px;
-
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 220px;
 
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(187, 187, 187, 0.5);
@@ -74,11 +78,11 @@
 
 .main_assetBox_imgbox {
     margin: 5px;
-    height: 75%;
     width: 100%;
     overflow: hidden;
 
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
 }
@@ -90,6 +94,8 @@
 .main_assetBox_data{
     width: 100%;
     height: auto;
+
+    flex-grow: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,8 +108,8 @@
 }
 
 .main_assetBox_data_buttons {
-    padding: 0 0px 2px 0px;
-    transform: translate(120%, 0);
+    align-self: flex-end;
+    margin-right: 2px;
 }
 
 .main_assetBox_data_downloadBtn {
