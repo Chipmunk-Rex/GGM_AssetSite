@@ -27,7 +27,6 @@ window.onload = function () {
             link +
             '><img class="main_assetBox_data_downloadBtn button"src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/512px-Google_Drive_icon_%282020%29.svg.png" alt=""></a></div></div></div>'
         );
-        console.log(columns);
       });
     });
 };
@@ -40,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       search();
     });
+
   document
     .getElementsByClassName("main_SearchInput")[0]
     .addEventListener("keyup", function (event) {
@@ -53,12 +53,25 @@ document.addEventListener("DOMContentLoaded", function () {
         search();
       }
     });
+
+  document
+    .getElementsByClassName("main_SearchIcon")[0]
+    .addEventListener("dblclick", function (e) {
+      console.log("dbclick");
+      autoSearch = !autoSearch;
+      if (autoSearch) {
+        e.target.classList.add("green");
+      } else {
+        e.target.classList.remove("green");
+      }
+    });
 });
 
 /// 검색
 function search() {
-  var searchInput =
-    document.getElementsByClassName("main_SearchInput")[0].value;
+  var searchInput = document
+    .getElementsByClassName("main_SearchInput")[0]
+    .value.toLowerCase();
   var assetBox = document.getElementsByClassName("main_assetBox");
   var assetBoxDataTitle = document.getElementsByClassName(
     "main_assetBox_data_title"
@@ -69,8 +82,10 @@ function search() {
 
   for (var i = 0; i < assetBox.length; i++) {
     if (
-      assetBoxDataTitle[i].textContent.includes(searchInput) ||
-      assetBoxDataDate[i].textContent.includes(searchInput)
+      assetBoxDataTitle[i].textContent
+        .toLocaleLowerCase()
+        .includes(searchInput) ||
+      assetBoxDataDate[i].textContent.toLocaleLowerCase().includes(searchInput)
     ) {
       assetBox[i].style.display = "flex";
     } else {
