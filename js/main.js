@@ -1,5 +1,5 @@
 window.onload = function () {
-  fetch("data/AssetList.csv")
+  fetch("../data/AssetList.csv")
     .then((response) => response.text())
     .then((csvData) => {
       const rows = csvData.split("\n");
